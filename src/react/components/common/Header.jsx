@@ -44,7 +44,7 @@ export default class Header extends React.Component {
                         <If test={this.props.login}>
                             <StyledAdminNavWrapper>
                                 <Link to='/admin' className='btn'>
-                                    Login <i className="fa fa-sign-in" />
+                                    Login <i className="fa fa-sign-in-alt" />
                                 </Link>
                             </StyledAdminNavWrapper>
                         </If>
@@ -52,7 +52,7 @@ export default class Header extends React.Component {
                         <If test={this.props.admin}>
                             <StyledAdminNavWrapper>
                                 <Link to='/' className='btn' onClick={() => this.logOut()}>
-                                    Logout <i className="fa fa-sign-out" />
+                                    Logout <i className="fa fa-sign-out-alt" />
                                 </Link>
                             </StyledAdminNavWrapper>
                         </If>

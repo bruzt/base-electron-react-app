@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import '../dependencies/jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-//import 'font-awesome/css/font-awesome.min.css';
+import '@fortawesome/fontawesome-free/js/all';
 
 import store from '../redux/store';
 

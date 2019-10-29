@@ -74,8 +74,7 @@
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
-    "styled-components": "^4.4.0",
-    "url-loader": "^2.2.0"
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -93,6 +92,7 @@
     "css-loader": "^3.2.0",
     "electron": "7.0.0",
     "node-loader": "^0.6.0",
-    "style-loader": "^0.23.1"
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.2.0"
   }
 }

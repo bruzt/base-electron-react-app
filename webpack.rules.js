@@ -25,9 +25,12 @@ module.exports = [
     }
   },
   {
-    test: /\.(png|jpg|jpe?g|gif|ico|svg)$/i,
-    use: {
-      loader: 'url-loader',
+    test: /\.(png|jpg|jpe?g|gif|ico|ttf|eot|svg|woff(2)?)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+    loader: "file-loader",
+    options: {
+      name: "[name].[ext]",
+      outputPath: "fonts/",
+      publicPath: "../fonts/"
     }
-  },
+  }
 ];

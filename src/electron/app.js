@@ -1,16 +1,20 @@
 const { app } = require('electron');
+
 const mainWindow = require('./mainWindow');
+const appTray = require('./tray');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
     app.quit();
 }
 
-let mainW;
+let mainW, tray;
 
 app.on('ready', () => {
 
     mainW = mainWindow();
+
+    tray = appTray();
 });
 
 app.on('activate', () => {

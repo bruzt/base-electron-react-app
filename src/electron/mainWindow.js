@@ -16,6 +16,8 @@ module.exports = () => {
 
     mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
 
+    mainWindow.setAutoHideMenuBar(true);
+
     // Open the DevTools.
     //mainWindow.webContents.openDevTools();
 

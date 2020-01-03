@@ -60,6 +60,9 @@
           }
         ]
       ]
+    },
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "dependencies": {
@@ -78,11 +81,19 @@
     "redux-thunk": "^2.3.0",
     "styled-components": "^4.4.0"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-runtime": "^7.6.2",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
+    "@commitlint/cli": "^8.3.3",
+    "@commitlint/config-conventional": "^8.3.3",
     "@electron-forge/cli": "^6.0.0-beta.45",
     "@electron-forge/maker-deb": "^6.0.0-beta.45",
     "@electron-forge/maker-rpm": "^6.0.0-beta.45",
@@ -91,9 +102,12 @@
     "@electron-forge/plugin-webpack": "^6.0.0-beta.45",
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
     "babel-loader": "^8.0.6",
+    "commitizen": "^4.0.3",
     "css-loader": "^3.2.0",
+    "cz-conventional-changelog": "^3.0.2",
     "electron": "7.0.0",
     "file-loader": "^4.2.0",
+    "husky": "^3.1.0",
     "node-loader": "^0.6.0",
     "style-loader": "^0.23.1"
   }
